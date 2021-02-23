@@ -10,10 +10,10 @@ export class AppComponent {
   player = 1;
   baris = 0;
   kolom = 0;
-
+  arr : number[][]
   onClick() {}
-  Clear(){
-    this.baris=0;
-    this.kolom=0;
+  Clear() {
+    this.baris = 0;
+    this.kolom = 0;
   }
 }
