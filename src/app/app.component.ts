@@ -12,4 +12,8 @@ export class AppComponent {
   kolom = 0;
 
   onClick() {}
+  Clear(){
+    this.baris=0;
+    this.kolom=0;
+  }
 }
