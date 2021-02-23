@@ -10,16 +10,6 @@ export class AppComponent {
   player = 1;
   baris = 0;
   kolom = 0;
-  arr = Array[5][5];
-  brs: number;
-  klm: number;
-  onStart() {
-    for (this.brs = 0; this.brs < 5; this.brs++) {
-      for (this.klm = 0; this.klm < 5; this.klm++) {
-        this.arr[this.brs][this.klm] = "*";
-      }
-    }
-  }
 
   onClick() {}
 }
