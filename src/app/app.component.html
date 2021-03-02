@@ -1,5 +1,6 @@
 <b>
-  WELCOME PLAYER {{player}}
+  TURN : PLAYER {{player}} 
+  <br>
 </b>
 <br>
 Baris :<input [(ngModel)]="baris" type="text">
@@ -8,3 +9,29 @@ Kolom :<input [(ngModel)]="kolom" type="text">
 <br>
 <button (click)="onClick()">click</button>
 <button (click)="Clear()">clear</button>
+<button (click)="Reset()">reset</button>
+<br>
+
+<ng-template *ngIf="eror;then showEror; else notShowEror">
+</ng-template>
+
+<ng-template #showEror>
+	EROR : {{eror}}
+</ng-template>
+<ng-template #notShowEror>
+</ng-template>
+<br>
+<div *ngFor="let baris of arr">
+	<span *ngFor="let kolom of baris">
+      {{kolom}}
+	</span>
+</div><br>
+<ng-template *ngIf="win; then showWin;else notShowWin" ]>
+</ng-template>
+
+<ng-template #showWin>
+	THE WINNER IS {{winner}}
+</ng-template>
+<ng-template #notShowWin>
+
+</ng-template>
